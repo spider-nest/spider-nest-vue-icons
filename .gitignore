@@ -33,5 +33,4 @@ website/play/index.vue
 icons/*
 build/*
 es
-lib
 types

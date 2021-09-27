@@ -1,0 +1,55 @@
+{
+  "name": "@spider-nest-vue/icons",
+  "description": "Icon library for spider-nest-vue.",
+  "version": "0.0.2",
+  "keywords": [
+    "icon",
+    "svg",
+    "spider-nest",
+    "spider-nest-vue"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/spider-nest-vue/spider-nest-vue-icons/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spider-nest-vue/spider-nest-vue-icons.git"
+  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "unpkg": "lib/index.js",
+  "types": "types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "es",
+    "lib",
+    "types"
+  ],
+  "scripts": {
+    "serve": "vite",
+    "gen": "node ./scripts/generate.js && yarn prettier",
+    "pub": "sh ./scripts/publish.sh",
+    "prettier": "prettier ./packages -w",
+    "gen-dts": "node ./configs/morph.js",
+    "build": "sh ./scripts/build-comp.sh",
+    "build:entry": "rollup --config ./configs/rollup.config.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@vue/compiler-sfc": "^3.2.19",
+    "esbuild": "^0.13.2",
+    "klaw-sync": "^6.0.0",
+    "ora": "^5.4.1",
+    "prettier": "^2.4.1",
+    "rollup": "^2.57.0",
+    "rollup-plugin-esbuild": "^3.0.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "svgo": "^2.7.0",
+    "ts-morph": "^11.0.3",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3",
+    "vite": "^2.5.10",
+    "vue": "^3.2.19"
+  }
+}
